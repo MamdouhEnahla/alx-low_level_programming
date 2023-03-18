@@ -10,10 +10,10 @@ int main(void)
 {
 	int ch = 0, vh;
 
-	while (ch <= 9)
+	while (ch <= 99)
 	{
 		vh = ch;
-		while (vh <= 9)
+		while (vh <= 99)
 		{
 			if (vh != ch)
 			{
