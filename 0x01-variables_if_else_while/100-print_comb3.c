@@ -20,7 +20,7 @@ int main(void)
 			{
 				putchar(ch + 48);
 				putchar(vh + 48);
-				if (ch + vh != 12)
+				if (ch + vh != 17)
 				{
 					putchar(',');
 					putchar(' ');
