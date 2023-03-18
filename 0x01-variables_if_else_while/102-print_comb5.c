@@ -12,7 +12,7 @@ int main(void)
 
 	while (ch <= 9)
 	{
-		vh = 0;
+		vh = ch;
 		while (vh <= 9)
 		{
 			if (vh != ch)
