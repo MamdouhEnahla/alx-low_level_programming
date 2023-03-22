@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- *
  * add - check code
  *
  * @a, @b: function args
