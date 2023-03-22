@@ -54,7 +54,7 @@ int main(void)
 		f2z = sumz;
 
 		if (i != 98)
-			printf(", ")
+			printf(", ");
 		else
 			printf("\n");
 	}
