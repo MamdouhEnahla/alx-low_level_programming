@@ -16,7 +16,7 @@ int num_length(int n)
 	while (n)
 	{
 		n = n / 10;
-		len += 1
+		len += 1;
 	}
 
 	return (len);
@@ -30,7 +30,7 @@ int num_length(int n)
 int main(void)
 {
 	int i, zeros;
-	unsigned long f1 = 1, f2 = 2, sum, max = 100000000, f1z = f2z = sumz = 0;
+	unsigned long f1 = 1, f2 = 2, sum, max = 100000000, f1z = 0, f2z = 0, sumz = 0;
 
 	for (i = 1; i <= 98; i++)
 	{
