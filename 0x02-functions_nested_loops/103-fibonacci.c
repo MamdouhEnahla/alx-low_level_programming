@@ -22,6 +22,6 @@ int main(void)
 		f1 = f2;
 		f2 = sum;
 	}
-	printf(".0f\n", total);
+	printf("%.0f\n", total);
 	return (0);
 }
