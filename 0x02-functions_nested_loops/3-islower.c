@@ -1,9 +1,7 @@
 #include "main.h"
 
 /**
- * islower - check code
- *
- * Description: check lower
+ * _islower - check code
  *
  * @c: function argument
  *
