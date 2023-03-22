@@ -3,10 +3,10 @@
 /**
  * add - check code
  *
- * @a, @b: function args
+ * @a: first arg
+ * @b: second arg
  *
  * Return: sum of both
- *
  */
 int add(int a, int b)
 {
