@@ -3,6 +3,8 @@
 /**
  * islower - check code
  *
+ * Description: check lower
+ *
  * @c: function argument
  *
  * Return: 1 for lower 0 otherwise.
