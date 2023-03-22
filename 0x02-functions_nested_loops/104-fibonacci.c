@@ -30,13 +30,13 @@ int num_length(int n)
 int main(void)
 {
 	int i, zeros;
-	unsigned long f1 = 1, f2 = 2, sum, max = 100000000, f1z = 0, f2z = 0, sumz = 0;
+	unsigned long f1 = 1, f2 = 2, sum, mx = 100000000, f1z = 0, f2z = 0, sumz = 0;
 
 	for (i = 1; i <= 98; i++)
 	{
 		if (f1z > 0)
 			printf("%lu", f1z);
-		zeros = num_length(max) - 1 - num_length(f1);
+		zeros = num_length(mx) - 1 - num_length(f1);
 
 		while (f1z > 0 && zeros > 0)
 		{
@@ -46,8 +46,8 @@ int main(void)
 
 		printf("%lu", f1);
 
-		sum = (f1 + f2) % max;
-		sumz = f1z + f2z + (f1 + f2) / max;
+		sum = (f1 + f2) % mx;
+		sumz = f1z + f2z + (f1 + f2) / mx;
 		f1 = f2;
 		f1z = f2z;
 		f2 = sum;
