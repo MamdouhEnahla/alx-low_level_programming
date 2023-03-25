@@ -32,7 +32,7 @@ void largest_prime(long int n)
 		n /= 2;
 	for (pr = 3; pr <= _sqrt(n); pr += 2)
 	{
-		while (n %  == 0)
+		while (n % pr == 0)
 		{
 			n = n / pr;
 			mx = pr;
