@@ -13,7 +13,7 @@ void print_number(int n)
 		_putchar('-');
 		un = -un;
 	}
-	if ((un / 10) > 0)
+	if (un / 10)
 		print_number(un / 10);
 	_putchar((un % 10) + 48);
 }
