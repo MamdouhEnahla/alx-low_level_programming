@@ -42,11 +42,11 @@ void largest_prime(long int n)
 		mx = n;
 	printf("%d\n", mx);
 }
- /**
-  * main - Entry point
-  *
-  * Return: always 0.
-  */
+/**
+ * main - Entry point
+ *
+ * Return: always 0.
+ */
 int main(void)
 {
 	largest_prime(612852475143);
