@@ -26,21 +26,21 @@ double _sqrt(double n)
  */
 void largest_prime(long int n)
 {
-	int p, l;
+	int pr, mx;
 
 	while (n % 2 == 0)
 		n /= 2;
-	for (p = 3; p <= _sqrt(n); p += 2)
+	for (pr = 3; pr <= _sqrt(n); pr += 2)
 	{
-		while (n % p == 0)
+		while (n %  == 0)
 		{
-			n = n / p;
-			l = p;
+			n = n / pr;
+			mx = pr;
 		}
 	}
 	if (n > 2)
-		l = n ;
-	printf("%d\n", l);
+		mx = n;
+	printf("%d\n", mx);
 }
  /**
   * main - Entry point
