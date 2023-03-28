@@ -12,6 +12,7 @@ void puts2(char *str)
 	{
 		if (indx % 2 == 0)
 			_putchar(str[indx]);
+		indx++;
 	}
 	_putchar('\n');
 }
