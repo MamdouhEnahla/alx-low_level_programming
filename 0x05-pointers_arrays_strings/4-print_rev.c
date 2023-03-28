@@ -6,7 +6,7 @@
  */
 void print_rev(char *s)
 {
-	int indx;
+	int indx = 0;
 
 	while (s[indx])
 		indx++;
