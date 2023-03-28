@@ -5,7 +5,7 @@
  * @dest: first arg
  * @src: second arg
  *
- * Retrun: a copy of the given string.
+ * Retrun: a pointer that refers to the given string.
  */
 char *_strcpy(char *dest, char *src)
 {
