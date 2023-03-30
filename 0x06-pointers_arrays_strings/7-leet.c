@@ -2,24 +2,24 @@
 
 /**
  * leet - Check code
- * @n: function arg
+ * @s: function arg
  *
  * Return: char Value.
  */
-char *leet(cahr *n)
+char *leet(char *s)
 {
-	int i = 0, j;
+	int i = 0, j = 0;
 	char lettres[] = "aAeEoOtTlL";
 	char numbers[] = "4433007711";
 
-	while (n[i] != '\0')
+	while (s[i])
 	{
-		for (j = 0; j < 10; j++)
+		while ((j < 10) && (s[i] == letters[j]))
 		{
-			if (n[i] == letters[j])
-				n[i] = numbers[j];
+			s[i] = numbers[j];
+			j++;
 		}
 		i++;
 	}
-	return (n);
+	return (s);
 }
