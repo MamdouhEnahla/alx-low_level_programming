@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_number - Check code
- * @n: function arg
- */
+  * print_number - print numbers chars
+  * @n: integer params
+  */
 void print_number(int n)
 {
 	unsigned int n1;
