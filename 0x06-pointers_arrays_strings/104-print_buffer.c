@@ -47,7 +47,7 @@ void printASCII(char *b, int s, int e)
 	{
 		c = *(b + s + i);
 		if (!isPrintable(c))
-			c = 4E;
+			c = 46;
 		printf("%c", c);
 		i++;
 	}
