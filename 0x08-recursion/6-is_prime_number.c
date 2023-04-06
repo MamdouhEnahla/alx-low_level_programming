@@ -9,11 +9,11 @@
  */
 int check_prime(int n, int p)
 {
-        if (p >= n && n > 1)
-                return (1);
-        else if (n % p == 0 || n <= 1)
-                return (0);
-        return (check_prime(n, p + 1));
+	if (p >= n && n > 1)
+		return (1);
+	else if (n % p == 0 || n <= 1)
+		return (0);
+	return (check_prime(n, p + 1));
 }
 /**
  * is_prime_number - check code
