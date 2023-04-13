@@ -14,7 +14,9 @@ int main(int argc, char const *argv[])
 
 	if (argc != 3)
 		return (printf("Error\n"), 1);
+
 	res = atoi(argv[1]) * atoi(argv[2]);
+	printf("%d\n", res);
 
 	return (0);
 }
