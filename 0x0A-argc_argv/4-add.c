@@ -17,7 +17,7 @@ int main(int argc, char const *argv[])
 	{
 		for (ch = argv[argc]; *ch; ch++)
 		{
-			if (*ch < 48 || *ch > 57)
+			if (*ch < '0' || *ch > '9')
 			{
 				printf("Error\n");
 				return (1);
