@@ -17,10 +17,7 @@ int main(int argc, char const *argv[])
 		printf("%d\n", res);
 	}
 	else
-	{
-		printf("Error\n");
-		return (res);
-	}
+		return (printf("Error\n"), 1);
 
 	return (0);
 }
