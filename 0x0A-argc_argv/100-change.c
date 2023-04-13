@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
 {
 	int i, lc = 0, money;
 	int coins[] = {25, 10, 5, 2, 1};
+
 	money = atoi(argv[1]);
 
 	if (argc != 2)
