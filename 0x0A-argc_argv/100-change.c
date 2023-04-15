@@ -10,15 +10,18 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, lc = 0, money;
-	int coins[] = {25, 10, 5, 2, 1};
+	int i = 0, lc = 0, money;
+        int coins[5] = {25, 10, 5, 2, 1};
+
+	if (argc < 2)
+                return (printf("Error\n"), 1);
 
 	money = atoi(argv[1]);
 
-	if (argc != 2)
-		return (printf("Error\n"), 1);
+	if (money < 0)
+		printf("0\n");
 
-	for (i = 0; i < 5; i++)
+	while (i < 5)
 	{
 		if (money >= coins[i])
 		{
@@ -27,6 +30,7 @@ int main(int argc, char *argv[])
 			if (money % coins[i] == 0)
 				break;
 		}
+		i++;
 	}
 	printf("%d\n", lc);
 
