@@ -11,10 +11,10 @@
 int main(int argc, char *argv[])
 {
 	int i = 0, lc = 0, money;
-        int coins[5] = {25, 10, 5, 2, 1};
+	int coins[5] = {25, 10, 5, 2, 1};
 
 	if (argc < 2)
-                return (printf("Error\n"), 1);
+		return (printf("Error\n"), 1);
 
 	money = atoi(argv[1]);
 
