@@ -1,6 +1,12 @@
 #ifndef DOG_H
 #define DOG_H
 
+/**
+ * struct dog - Check code
+ * @name: first arg
+ * @age: second arg
+ * @owner: third arg
+ */
 struct dog
 {
 	char *name;
