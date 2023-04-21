@@ -11,14 +11,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	int i = n;
 	va_list lst;
 
-	if (!n)
-	{
-		printf("\n");
-		return;
-	}
-
 	while (i--)
 		printf("%d%s", va_arg(lst, int),
 			i ? (separator ? separator : "") : "\n");
+	printf("\n");
 	va_end(lst);
 }
