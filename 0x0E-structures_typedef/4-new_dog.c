@@ -11,7 +11,7 @@ int _strlen(char *s)
 {
 	int len = 0;
 
-	while (s)
+	while (s[len])
 	{
 		len++;
 	}
@@ -32,7 +32,7 @@ char *_strcpy(char *dest, char *src)
 
 	len = _strlen(src);
 	
-	while (src)
+	while (src[i])
 	{
 		dest[i] = src[i];
 		i++;
