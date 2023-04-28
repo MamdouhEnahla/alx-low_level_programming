@@ -3,23 +3,24 @@
 /**
  * _strlen - Check code
  * @s: function arg
- * Return: integer value
+ *
+ * Return: number of bytes in the string pointed  to  by s.
  */
 int _strlen(char *s)
 {
-	int ptr = 0;
+	int len = 0;
 
 	if (*s)
-		ptr += _strlen_(s + 1) + 1;
+		len += _strlen_(s + 1) + 1;
 
-	return (ptr);
+	return (len);
 }
 
 /**
- * print_list - Check code
+ * print_list - Prints all the elements of a list_t list
  * @h: a pointer to the head
  *
- * Return: the list size
+ * Return: the number of nodes.
  */
 size_t print_list(const list_t *h)
 {
@@ -27,9 +28,12 @@ size_t print_list(const list_t *h)
 
 	while (h)
 	{
-		printf("[%d] %s\n", _strlen(h->str), h->str ? h->str : "(nil)");
-		h = h->next;
+		if (h->str)
+			printf("[%d] %s\n", _strlen(h->str), h->str);
+		else
+			printf("[%d] %s\n", _strlen(h->str), "(nil)");
 		sz++;
+		h = h->next;
 	}
 	return (sz);
 }
