@@ -14,7 +14,8 @@ int _strlen(char *s)
 
 	return (ptr);
 }
-/*
+
+/**
  * print_list - Check code
  * @h: a pointer to the head
  *
@@ -26,8 +27,8 @@ size_t print_list(const list_t *h)
 
 	while (h)
 	{
-		printf("", _strlen(h->str), h->str ? h->str ? h->str : "(nil)");
-		h = c->next;
+		printf("[%d] %s\n", _strlen(h->str), h->str ? h->str ? h->str : "(nil)");
+		h = h->next;
 		sz++;
 	}
 	return (sz);
