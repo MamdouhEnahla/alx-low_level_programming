@@ -1,7 +1,5 @@
 #include "main.h"
 
-int _strlen(char *s);
-
 /**
  * create_file - check code
  * @filename: first arg
