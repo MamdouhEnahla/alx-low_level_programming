@@ -1,5 +1,7 @@
 #include "main.h"
 
+int _strlen(char *s);
+
 /**
  * append_text_to_file - appends a text to a file
  * @filename: first arg
@@ -34,10 +36,10 @@ int append_text_to_file(const char *filename, char *text_content)
  */
 int _strlen(char *s)
 {
-	int p = 0;
+	int ptr = 0;
 
-	while (*s++)
-		p++;
+	if (*s)
+		ptr += _strlen(s + 1) + 1;
 
-	return (p);
+	return (ptr);
 }
