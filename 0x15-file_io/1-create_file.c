@@ -36,10 +36,10 @@ int create_file(const char *filename, char *text_content)
  */
 int _strlen(char *s)
 {
-	int ptr = 0;
+	int p = 0;
 
-	if (*s)
-		ptr += _strlen(s + 1) + 1;
+	while (*s++)
+		p++;
 
-	return (ptr);
+	return (p);
 }
