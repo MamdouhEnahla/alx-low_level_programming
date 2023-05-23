@@ -38,7 +38,7 @@ int main(int argc, char **argv)
 	_close = close(src);
 	if (_close == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", src), exit(100);
-	on_close = close(dest);
+	_close = close(dest);
 	if (_close == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", dest), exit(100);
 	return (0);
