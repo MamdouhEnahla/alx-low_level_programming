@@ -5,11 +5,11 @@
  * @filename: file name
  * @letters: read bytes
  *
- * Return: numer of bytes.
+ * Return: 0 or numer of bytes.
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd, bytes;
+	ssize_t fd, bytes;
 	char buf[READ_BUF_SIZE * 8];
 
 	if (!filename || !letters)
