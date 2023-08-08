@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * read_textfile - Check code 
+ * read_textfile - Check code
  * @filename: name of file
  * @letters: number of bytes
  *
